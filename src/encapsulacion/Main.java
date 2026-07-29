@@ -128,8 +128,6 @@ public class Main {
             }
         }
 
-        System.out.println("\n==================================================");
         System.out.println("            FIN DE LAS PRUEBAS                    ");
-        System.out.println("==================================================");
     }
 }
