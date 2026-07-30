@@ -13,5 +13,12 @@ public class Main {
         p1.mostrar();
         p1.setEdad(22);
         System.out.println("Edad corregida con setEdad(22): " + p1.getEdad() + " años\n");
+        
+        // 2Producto
+        System.out.println("--- 2️⃣ Producto con Validaciones ---");
+        Producto prod = new Producto("PRD-01", "Silla Gamer", 1200.0, 5);
+        prod.vender(3);
+        prod.vender(4); // Intento de venta mayor al stock
+        System.out.println();
     }
 }
