@@ -49,5 +49,13 @@ public class Main {
         System.out.printf("%.2f °C equivalen a %.2f °F%n", term.getCelsius(), term.getFahrenheit());
         term.setCelsius(-300); // Intento por debajo del cero absoluto
         System.out.println();
+        
+     // 7️ Reloj
+        System.out.println("--- 7️ Reloj con Formato ---");
+        Reloj reloj1 = new Reloj(14, 30, 45);
+        System.out.println("Hora válida: " + reloj1.mostrarHora());
+        Reloj reloj2 = new Reloj(25, 61, 90); // Valores inválidos
+        System.out.println("Hora tras corregir rangos: " + reloj2.mostrarHora());
+        System.out.println();
     }
 }
