@@ -22,12 +22,18 @@ public class Main {
         System.out.println();
         
      // 3️ Cuenta Bancaria
-        System.out.println("--- 3️⃣ Cuenta con PIN ---");
+        System.out.println("--- 3️ Cuenta con PIN ---");
         CuentaBancaria cuenta = new CuentaBancaria("Luis Mario", 1000.0, 1234);
         System.out.println("Intento 1 con PIN 9999 (Incorrecto):");
         cuenta.retirar(200, 9999);
         System.out.println("Intento 2 con PIN 1234 (Correcto):");
         cuenta.retirar(200, 1234);
         System.out.println();
+        
+     // 4️ Curso
+        System.out.println("--- 4️⃣ Curso y Calificaciones ---");
+        Curso curso = new Curso("Programación I", 70, 85, 55);
+        System.out.printf("Curso: %s | Promedio: %.2f | Estado: %s%n%n", 
+                          curso.getNombreCurso(), curso.promedio(), curso.estado());
     }
 }
