@@ -31,16 +31,23 @@ public class Main {
         System.out.println();
         
      // 4️ Curso
-        System.out.println("--- 4️⃣ Curso y Calificaciones ---");
+        System.out.println("--- 4️ Curso y Calificaciones ---");
         Curso curso = new Curso("Programación I", 70, 85, 55);
         System.out.printf("Curso: %s | Promedio: %.2f | Estado: %s%n%n", 
                           curso.getNombreCurso(), curso.promedio(), curso.estado());
      // 5️ Estudiante
-        System.out.println("--- 5️⃣ Estudiante y Beca ---");
+        System.out.println("--- 5️ Estudiante y Beca ---");
         Estudiante e1 = new Estudiante("2024001", "Sofía Cruz", 88.5);
         Estudiante e2 = new Estudiante("2024002", "Pedro Ruiz", 72.0);
         System.out.println(e1.getNombre() + " (Prom: " + e1.getPromedio() + ") -> ¿Becado?: " + e1.esBecado());
         System.out.println(e2.getNombre() + " (Prom: " + e2.getPromedio() + ") -> ¿Becado?: " + e2.esBecado());
+        System.out.println();
+        
+     // 6️ Termómetro
+        System.out.println("--- 6️ Termómetro Inteligente ---");
+        Termometro term = new Termometro(25.0);
+        System.out.printf("%.2f °C equivalen a %.2f °F%n", term.getCelsius(), term.getFahrenheit());
+        term.setCelsius(-300); // Intento por debajo del cero absoluto
         System.out.println();
     }
 }
