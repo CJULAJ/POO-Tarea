@@ -74,5 +74,10 @@ public class Main {
         System.out.println("Puntaje tras ronda 2: " + j1.getPuntajeActual() + " | Máximo: " + j1.getPuntajeMaximo());
         j1.actualizarPuntaje(320); // Supera el máximo
         System.out.println();
+
+     // 10 Factura
+        System.out.println("--- 10 Factura con Total ---");
+        Factura fac = new Factura("FAC-2026-001", "Monitores 27 pulgadas", 3, 1850.0);
+        fac.mostrarFactura();
     }
 }

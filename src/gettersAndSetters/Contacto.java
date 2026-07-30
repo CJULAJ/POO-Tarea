@@ -33,7 +33,7 @@ public class Contacto {
         if (email != null && email.contains("@")) {
             this.email = email;
         } else {
-            System.out.println("⚠️ Email inválido (debe contener '@'). Asignando 'sin_email@dominio.com'.");
+            System.out.println("Email inválido (debe contener '@'). Asignando 'sin_email@dominio.com'.");
             this.email = "sin_email@dominio.com";
         }
     }
