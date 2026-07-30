@@ -65,5 +65,14 @@ public class Main {
         c1.mostrarContacto();
         c2.mostrarContacto();
         System.out.println();
+        
+     // 9️ Jugador
+        System.out.println("--- 9️ Juego con Puntaje Máximo ---");
+        Jugador j1 = new Jugador("GamerX", 150);
+        System.out.println("Puntaje inicial: " + j1.getPuntajeActual() + " | Máximo: " + j1.getPuntajeMaximo());
+        j1.actualizarPuntaje(100); // Menor al máximo
+        System.out.println("Puntaje tras ronda 2: " + j1.getPuntajeActual() + " | Máximo: " + j1.getPuntajeMaximo());
+        j1.actualizarPuntaje(320); // Supera el máximo
+        System.out.println();
     }
 }
