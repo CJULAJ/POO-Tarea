@@ -57,5 +57,13 @@ public class Main {
         Reloj reloj2 = new Reloj(25, 61, 90); // Valores inválidos
         System.out.println("Hora tras corregir rangos: " + reloj2.mostrarHora());
         System.out.println();
+        
+     // 8️ Contacto
+        System.out.println("--- 8️ Contacto con Teléfono ---");
+        Contacto c1 = new Contacto("Marta Gómez", "55551234", "marta@gmail.com");
+        Contacto c2 = new Contacto("Jorge", "123", "jorge_sin_arroba.com"); // Formatos inválidos
+        c1.mostrarContacto();
+        c2.mostrarContacto();
+        System.out.println();
     }
 }
