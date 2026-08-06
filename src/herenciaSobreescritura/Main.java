@@ -30,5 +30,9 @@ public class Main {
         System.out.println("\n--- 6. Animal y Perro ---");
         Animal miPerro = new Perro();
         miPerro.hacerSonido();
+        
+        System.out.println("\n--- 7. Vehículo y Moto ---");
+        Moto moto = new Moto("Yamaha", 180, 250);
+        moto.mostrarInfo();
     }
 }
