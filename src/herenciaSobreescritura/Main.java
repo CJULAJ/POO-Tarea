@@ -18,5 +18,9 @@ public class Main {
         System.out.println("\n--- 3. Producto Perecedero ---");
         ProductoPerecedero leche = new ProductoPerecedero("Leche Entera", 15.50, "2026-08-01");
         System.out.println("¿Está vencido al 2026-08-04? " + leche.estaVencido("2026-08-04"));
+        
+        System.out.println("\n--- 4. Transporte y Bus ---");
+        Bus bus = new Bus(45, "Ruta 10 - Chimaltenango");
+        bus.descripcion();
     }
 }
