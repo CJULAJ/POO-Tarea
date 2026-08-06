@@ -22,5 +22,9 @@ public class Main {
         System.out.println("\n--- 4. Transporte y Bus ---");
         Bus bus = new Bus(45, "Ruta 10 - Chimaltenango");
         bus.descripcion();
+        
+        System.out.println("\n--- 5. Empleado y Gerente ---");
+        Gerente gerente = new Gerente("Marta Pérez", 8000, 2500);
+        System.out.println("Salario total gerente: Q" + gerente.calcularSalario());
     }
 }
