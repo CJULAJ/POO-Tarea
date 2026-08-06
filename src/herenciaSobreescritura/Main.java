@@ -26,5 +26,9 @@ public class Main {
         System.out.println("\n--- 5. Empleado y Gerente ---");
         Gerente gerente = new Gerente("Marta Pérez", 8000, 2500);
         System.out.println("Salario total gerente: Q" + gerente.calcularSalario());
+        
+        System.out.println("\n--- 6. Animal y Perro ---");
+        Animal miPerro = new Perro();
+        miPerro.hacerSonido();
     }
 }
