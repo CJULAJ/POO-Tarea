@@ -34,5 +34,11 @@ public class Main {
         System.out.println("\n--- 7. Vehículo y Moto ---");
         Moto moto = new Moto("Yamaha", 180, 250);
         moto.mostrarInfo();
+        
+        System.out.println("\n--- 8. Polimorfismo en Figuras ---");
+        Figura rect = new Rectangulo(5, 4);
+        Figura circ = new Circulo(3);
+        System.out.println("Área Rectángulo: " + rect.calcularArea());
+        System.out.println("Área Círculo: " + String.format("%.2f", circ.calcularArea()));
     }
 }
