@@ -1,6 +1,6 @@
 package herenciaSobreescritura;
 
-class CuentaCorriente extends Cuenta {
+public class CuentaCorriente extends Cuenta {
     private double limiteSobregiro;
 
     public CuentaCorriente(double saldo, double limiteSobregiro) {

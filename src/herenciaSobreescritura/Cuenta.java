@@ -1,6 +1,6 @@
 package herenciaSobreescritura;
 
-class Cuenta {
+public class Cuenta {
     protected double saldo;
 
     public Cuenta(double saldo) {

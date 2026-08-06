@@ -15,5 +15,8 @@ public class Main {
         cc.retirar(600); // Excede saldo, usa sobregiro
         cc.retirar(200); // Supera el límite de sobregiro
         
+        System.out.println("\n--- 3. Producto Perecedero ---");
+        ProductoPerecedero leche = new ProductoPerecedero("Leche Entera", 15.50, "2026-08-01");
+        System.out.println("¿Está vencido al 2026-08-04? " + leche.estaVencido("2026-08-04"));
     }
 }
