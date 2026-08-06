@@ -35,10 +35,14 @@ public class Main {
         Moto moto = new Moto("Yamaha", 180, 250);
         moto.mostrarInfo();
         
-        System.out.println("\n--- 8. Polimorfismo en Figuras ---");
+        System.out.println("\n--- 8. Figuras ---");
         Figura rect = new Rectangulo(5, 4);
         Figura circ = new Circulo(3);
         System.out.println("Área Rectángulo: " + rect.calcularArea());
         System.out.println("Área Círculo: " + String.format("%.2f", circ.calcularArea()));
+        
+        System.out.println("\n--- 9. Libro Digital ---");
+        LibroDigital libro = new LibroDigital("Java a Fondo", "Pablo Sznajdleder", 12.5);
+        libro.mostrarInfo();
     }
 }
